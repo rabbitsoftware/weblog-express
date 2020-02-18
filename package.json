@@ -1,0 +1,21 @@
+{
+  "name": "weblog-express",
+  "version": "1.0.0",
+  "main": "webapp.js",
+  "scripts": {
+    "start": "node dist/webapp.js",
+    "dev": "nodemon webapp.js --exec babel-node --presets babel-preset-env",
+    "build": "rm -rf dist && mkdir -p dist &&  babel webapp.js -d dist"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^1.19.4"
+  }
+}
